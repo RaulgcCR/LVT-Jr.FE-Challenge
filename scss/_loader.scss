@@ -1,0 +1,17 @@
+.loader {
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: toRem(891px);
+    background: $color-white-loader;
+
+    p {
+        font-family: $font-normal;
+        font-size: toRem(24px);
+        color: $color-blue;
+        letter-spacing: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+}

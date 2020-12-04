@@ -1,0 +1,34 @@
+@media only screen and (max-width: 768px){
+	header {
+        justify-content: center;
+        
+        .header--left, .header--right {
+            display: none;
+        }
+	}
+	
+	.card {
+		align-items: center;
+		flex: 1 1 80%;
+	}
+
+	.activity-list {
+        width: 50%;
+        
+        .activity__item {
+			width: 100%;
+			height: 100%;
+        }
+	}
+}
+
+@media only screen and (max-width: 426px){
+	main{
+		flex-direction: column;
+	}
+	
+	.activity-list {
+		width: 100%;
+		padding: 2rem;
+	}
+}

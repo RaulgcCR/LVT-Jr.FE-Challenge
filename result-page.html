@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive lab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__item logo">
+            <img src="images/SVGs/Logo.svg" alt="logo">
+        </div>
+        <div class="header__item header--right">
+            <a><img src="images/SVGs/icn_search.svg" alt=""></a>
+            <a><img src="images/SVGs/icn_person.svg" alt=""></a>
+        </div>
+    </header>
+    <section id="loader" class="loader">
+        <img src="images/loading_spinner.gif" alt="loading">
+        <p>Please wait a moment...</p>
+    </section>
+    <main id="main">
+        <section class="results">
+            <h1 id="number__results"></h1>
+            <p id="help__text"></p>
+            <section id="result__card" class="result__card">
+                <div class="result__image">
+                    <div class="image__container">
+                        <img src="images/SVGs/icn_person.svg" alt="">
+                    </div>
+                </div>
+                <section class="result__main-info">
+                    <h2 id="name"></h2>
+                    <p id="description"></p>
+                    <section class="result__info">
+                        <div class="info__block">
+                            <h3>Address</h3>
+                            <p id="address"></p>
+                        </div>
+                        <div class="info__block">
+                            <h3>Phone Numbers</h3>
+                            <p id="phone__numbers"></p>
+                        </div>
+                        <div class="info__block">
+                            <h3>Email</h3>
+                            <p id="email"></p>
+                        </div>
+                        <div class="info__block">
+                            <h3>Relatives</h3>
+                            <p id="relatives"></p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <section id="search__section" class="search__section">
+        <h1>Can’t Find The Right Person?</h1>
+        <h2><span>Try Again</span> - Make a new search</h2>
+        <div class="search__form">
+            <div class="search__commands">
+                <div class="input__command">
+                    <input type="email" name="email__search" id="email__search" placeholder="EMAIL">
+                    <p id="email__error" class="email__error">Please add a valid email address</p>
+                </div>
+                <button onclick="getEmail(true)">GO!</button>
+            </div>
+            <div class="lock-message">
+                <img src="images/SVGs/lock.svg" alt="">
+                <p>Enter Any Email Address. They won't be notified.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer footer--left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </section>
+        <section class="footer footer--right">
+            <a href="">Terms</a> |
+            <a href="">Privacy</a>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/results.js" async defer></script>
+    <script src="js/main.js" async defer></script>
+</body>
+
+</html>

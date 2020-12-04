@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive lab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__item logo">
+            <img src="images/SVGs/Logo.svg" alt="logo">
+        </div>
+        <div class="header__item header--right">
+            <a><img src="images/SVGs/icn_search.svg" alt=""></a>
+            <a><img src="images/SVGs/icn_person.svg" alt=""></a>
+        </div>
+    </header>
+    <section id="loader" class="loader">
+        <img src="images/loading_spinner.gif" alt="loading">
+        <p>Please wait a moment...</p>
+    </section>
+    <section id="search__section" class="search__section">
+        <h1>Search Any Email Address</h1>
+        <h2><span>Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</h2>
+        <div class="search__form">
+            <form method="get" id="searchForm" action="http://localhost:8081/result-page.html">
+                <input type="hidden" name="result" id="result">
+            </form>
+            <div class="search__commands">
+                <div class="input__command">
+                    <input type="email" name="email__search" id="email__search" placeholder="EMAIL">
+                    <p id="email__error" class="email__error">Please add a valid email address</p>
+                </div>
+                <button onclick="getEmail(false)">GO!</button>
+            </div>
+            <div class="lock-message">
+                <img src="images/SVGs/lock.svg" alt="">
+                <p>Enter Any Email Address. They won't be notified.</p>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section class="main__header">
+            <h1>Reverse Email Lookup</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </section>
+        <section class="option__list">
+            <div class="option" style="order: 0">
+                <div class="option__image">
+                    1
+                </div>
+                <div class="option__content">
+                    <h2 class="option__title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="option" style="order: 2">
+                <div class="option__image">
+                    2
+                </div>
+                <div class="option__content">
+                    <h2 class="option__title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="option" style="order: 4">
+                <div class="option__image">
+                    3
+                </div>
+                <div class="option__content">
+                    <h2 class="option__title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="option" style="order: 1">
+                <div class="option__image">
+                    4
+                </div>
+                <div class="option__content">
+                    <h2 class="option__title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="option" style="order: 3">
+                <div class="option__image">
+                    5
+                </div>
+                <div class="option__content">
+                    <h2 class="option__title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="option" style="order: 5">
+                <div class="option__image">
+                    6
+                </div>
+                <div class="option__content">
+                    <h2 class="option__title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer footer--left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </section>
+        <section class="footer footer--right">
+            <a href="">Terms</a> |
+            <a href="">Privacy</a>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js" async defer></script>
+</body>
+
+</html>

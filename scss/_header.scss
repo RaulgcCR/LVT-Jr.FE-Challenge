@@ -1,0 +1,36 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+    background: $color-blue;
+    color: #FFF;
+
+    .header__item{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header--left{
+        @extend .header__item;
+        align-self: left;
+        padding-right: 20px;
+    }
+
+    .header--right{
+        @extend .header__item;
+        align-self: right;
+        padding-right: 20px;
+
+        a {
+            margin: 0.5rem;
+        }
+    }
+
+    .logo{
+        @extend .header__item;
+
+        img {
+            margin: 0 2rem;
+        }
+    }
+}
