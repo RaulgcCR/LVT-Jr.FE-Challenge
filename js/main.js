@@ -16,6 +16,8 @@ const getEmail = function(isResultsPage){
         document.getElementById("loader").style.setProperty('display', 'flex');
         document.getElementById("search__section").style.setProperty('display', 'none');
         document.getElementById("main").style.setProperty('display', 'none');
+        document.getElementById("email__search").style.setProperty('border', 'none');
+        document.getElementById("email__error").style.setProperty('display', 'none');
         document.getElementById("email__search").value = '';
 
         const URL = 'https://ltv-data-api.herokuapp.com/api/v1/records.json';
